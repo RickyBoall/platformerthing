@@ -1,1 +1,3 @@
-#Bridge between game file and HTML 
+//Bridge between game file and HTML, this runs once
+
+//
