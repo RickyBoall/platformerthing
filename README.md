@@ -1,3 +1,3 @@
 # platformerthing
-#yeeeee
+#You need to credit me as "Elthen" or with my real name "Ahmet Avci" if you prefer. Drop a link back to my patreon page. (https://www.patreon.com/elthen) if we use dwarf
 
