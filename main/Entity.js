@@ -26,7 +26,7 @@ export class Entity{
   }
   
   takeDamage(damage){
-    this._HP = this._HP - (damage/2);
+    this._HP = this._HP - ((damage-this._defence)/2);
   }
   
   checkHP(){
