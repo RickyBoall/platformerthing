@@ -2,19 +2,19 @@
 
 /********************************************************/
 
-class Entity{
+export class Entity{
   constructor(HP, xloc, yloc, AP, defence, speed, jumpHeight){
-    this.HP = HP;
-    this.x = xloc;
-    this.y = yloc;
-    this.AP = AP;
-    this.defence = defence;
-    this.speed = speed;
-    this.jumpHeight = jumpHeight;
+    this._HP = HP;
+    this._x = xloc;
+    this._y = yloc;
+    this._AP = AP;
+    this._defence = defence;
+    this._speed = speed;
+    this._jumpHeight = jumpHeight;
   }
   
   move(){
-    this.x = this.x + this.speed;
+    this._x = this._x + this.speed;
   }
   
   //matt helppp pysicssss
@@ -22,11 +22,15 @@ class Entity{
   }
   
   attack(opponent){
-    opponent.HP = opponent.HP - (this.attack - (opponent.defense/2));
+    opponent.takeDamage(this._AP);
+  }
+  
+  takeDamage(damage){
+    this._HP = this._HP - (damage/2);
   }
   
   checkHP(){
-    if(this.HP =< 0){
+    if(this._HP =< 0){
       this.die();
     }
   }
