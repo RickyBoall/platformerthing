@@ -6,10 +6,10 @@ class Controller(){
     ctx.fillRect(0, 0, width, width);
   }
 
-  this.canvas = document.getElementById('canvas');
-  this.ctx = canvas.getContext("2d");
-  this.width = 1200;
-  this.height = 600;
+  var canvas = document.getElementById('canvas');
+  var ctx = canvas.getContext("2d");
+  var width = 1200;
+  var height = 600;
   ctx.canvas.height = height;
   ctx.canvas.width = width;
   renderCanvas();
