@@ -1,3 +1,7 @@
+//TESTING STUFF
+document.write("This is added from a js file");
+
+
 //Controls game logic (already in game loop)
 //includes: enemy movement, who's turn it is to move, gravity/ physics etc.
 
