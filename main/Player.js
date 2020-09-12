@@ -1,1 +1,3 @@
-
+class Player extends Entity {
+  
+}
